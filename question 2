@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define MAX 50
+
+int main() {
+int top = -1, front = 0;
+int stack[MAX];
+void push(char);
+void pop();
+
+ int i, choice;
+ char s[MAX], b;
+ while (1)
+ {
+ printf("1-enter string");
+ printf("enter your choice\n");
+ scanf("%d", &choice);
+ switch (choice) {
+    case 1:
+ printf("enter string of your choice please\n");
+ scanf("%s", s);
+ for (i = 0;s[i] != '\0';i++)
+ {
+ b = s[i];
+ push(b);
+ }
+ for (i = 0;i < (strlen(s) / 2);i++);
+front++;}
+
+{
+    if ((stack)[top] == ([stack ]front]);
+pop;
+else
+ {
+ printf("%s is not considered as a palindrome\n", s);
+  front = 0;
+ top = -1;
+ break;
+ case 2:
+ exit (0);
+ default:
+ printf("enter correct choice\n");
+ break;
+ }
+ return 0;
+}
